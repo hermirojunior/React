@@ -1,6 +1,6 @@
 ﻿import styled from "styled-components";
 
-const Button = styled.a`
+const Button = styled.button`
 	color: var(--white);
 	background-color: rgb(22, 80, 162);
 	box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 4px 20px 0 rgba(255, 255, 255, 0.19);

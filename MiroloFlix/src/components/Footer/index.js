@@ -8,6 +8,9 @@ function Footer() {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
+        Desenvolvido por - Hermiro Junior
+      </p>
+      <p>
         Orgulhosamente criado durante a
         {' '}
         <a href="https://www.alura.com.br/">
