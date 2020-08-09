@@ -17,6 +17,7 @@ const Container = styled.ul`
     transform: initial;
     &:before {
       font-size: 30px;
+      color: style;
     }
   }
   
@@ -25,6 +26,9 @@ const Container = styled.ul`
   }
   .slick-next {
     right: 16px;
+  }
+  .slick-next::before, .slick-prev::before {
+    color: ${({arrowColor}) => arrowColor};
   }
 `;
 
@@ -38,11 +42,11 @@ export const SliderItem = styled.li`
   }
 `;
 
-const Slider = ({ children }) => (
-  <Container>
+const Slider = ({ arrowColor, children }) => (
+  <Container arrowColor = {arrowColor}>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,
